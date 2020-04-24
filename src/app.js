@@ -25,22 +25,23 @@ app.use(express.static(publicDirPath));
 
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weather App",
+    title: "Weather",
     name: "Anıl Tuluy",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About Page",
-    msg: "This message was rendered dynamically!",
+    title: "About",
+    msg:
+      "This site was created by Anıl Tuluy. It uses data from mapbox.com and weatherstack.com.",
     name: "Anıl Tuluy",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "Help Page",
+    title: "Help",
     msg: "This message was rendered dynamically!",
     name: "Anıl Tuluy",
   });
